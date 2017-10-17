@@ -1,0 +1,25 @@
+<?php
+/**
+ * @file
+ * Code for the Bento Careers  feature.
+ */
+
+include_once 'careers.features.inc';
+
+// =====================
+// = Add Node Template =
+// =====================
+
+/**
+ * Implements hook_theme().
+ */
+function careers_theme($existing, $type, $theme, $path) {
+  $theme = array();
+  $theme['node__career'] = array(
+    'render element' => 'content',
+    'base hook' => 'node',
+    'template' => 'node--career',
+    'path' => drupal_get_path('module', 'careers') . '/templates',
+  );
+  return $theme;
+}
