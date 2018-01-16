@@ -54,7 +54,6 @@ function careers_uuid_features_default_content() {
   ),
   'meta_canonical' => array(),
   'meta_copyright' => array(),
-  'meta_description' => array(),
   'meta_keywords' => array(),
   'meta_robots' => array(
     'und' => array(
@@ -64,6 +63,15 @@ function careers_uuid_features_default_content() {
       ),
     ),
   ),
+  'field_meta_description' => array(
+    'und' => array(
+      0 => array(
+        'metatags_quick' => '[site:slogan]',
+        'meta_name' => 'meta_description',
+      ),
+    ),
+  ),
+  'meta_description' => array(),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -123,7 +131,7 @@ function careers_uuid_features_default_content() {
     'pathauto' => 1,
   ),
   'webform' => array(
-    'nid' => 5,
+    'nid' => 17,
     'next_serial' => 2,
     'confirmation' => 'Thank you for applying to [site:name]! We’ll review your resume and contact you soon if we’re interested in scheduling an interview.
 ',
@@ -161,7 +169,7 @@ function careers_uuid_features_default_content() {
     ),
     'emails' => array(
       1 => array(
-        'nid' => 5,
+        'nid' => 17,
         'eid' => 1,
         'email' => 3,
         'subject' => 'Thank you for applying to SmileTech!',
@@ -181,7 +189,7 @@ For your reference, you submitted the following
         'status' => 1,
       ),
       2 => array(
-        'nid' => 5,
+        'nid' => 17,
         'eid' => 2,
         'email' => '[site:mail]',
         'subject' => 'You have a new careers submission from [site:name]',
@@ -208,7 +216,7 @@ The results of this submission may be viewed at:
     ),
     'components' => array(
       1 => array(
-        'nid' => 5,
+        'nid' => 17,
         'cid' => 1,
         'pid' => 0,
         'form_key' => 'name',
@@ -238,7 +246,7 @@ The results of this submission may be viewed at:
         'page_num' => 1,
       ),
       2 => array(
-        'nid' => 5,
+        'nid' => 17,
         'cid' => 2,
         'pid' => 0,
         'form_key' => 'phone',
@@ -268,7 +276,7 @@ The results of this submission may be viewed at:
         'page_num' => 1,
       ),
       3 => array(
-        'nid' => 5,
+        'nid' => 17,
         'cid' => 3,
         'pid' => 0,
         'form_key' => 'email',
@@ -296,7 +304,7 @@ The results of this submission may be viewed at:
         'page_num' => 1,
       ),
       4 => array(
-        'nid' => 5,
+        'nid' => 17,
         'cid' => 4,
         'pid' => 0,
         'form_key' => 'interested_position',
@@ -326,7 +334,7 @@ The results of this submission may be viewed at:
         'page_num' => 1,
       ),
       5 => array(
-        'nid' => 5,
+        'nid' => 17,
         'cid' => 5,
         'pid' => 0,
         'form_key' => 'attach_resume',
@@ -364,7 +372,7 @@ The results of this submission may be viewed at:
         'page_num' => 1,
       ),
       6 => array(
-        'nid' => 5,
+        'nid' => 17,
         'cid' => 6,
         'pid' => 0,
         'form_key' => 'what_is_2__2',
@@ -398,7 +406,7 @@ The results of this submission may be viewed at:
   ),
   'pathauto_perform_alias' => FALSE,
   'date' => '2017-10-11 04:29:57 -0600',
-  'user_uuid' => 'f49dd92a-e4ae-4086-a898-8de136e036cb',
+  'user_uuid' => 'cf69e417-fc66-4fd9-8ed6-a224d7ca50a5',
 );
   $nodes[] = array(
   'title' => 'Sample Position',
@@ -474,7 +482,7 @@ The results of this submission may be viewed at:
   ),
   'pathauto_perform_alias' => FALSE,
   'date' => '2017-10-17 07:01:46 -0600',
-  'user_uuid' => 'f49dd92a-e4ae-4086-a898-8de136e036cb',
+  'user_uuid' => 'cf69e417-fc66-4fd9-8ed6-a224d7ca50a5',
 );
   return $nodes;
 }

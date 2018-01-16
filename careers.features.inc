@@ -33,14 +33,6 @@ function careers_node_info() {
       'title_label' => t('Posting Title'),
       'help' => t('If you post a job posting here, it will be listed, in alphabetical order, on the careers page. If you would like to un-list the job posting, you\'ll need to either delete or un-publish this content.'),
     ),
-    'landing_page' => array(
-      'name' => t('Landing Page'),
-      'base' => 'node_content',
-      'description' => t('Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
   );
   drupal_alter('node_info', $items);
   return $items;
