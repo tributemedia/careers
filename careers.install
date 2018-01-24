@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file careers.install
+ */
+
+/**
+ * Implements hook_install().
+ */
+
+function careers_install() {
+  variable_set('pathauto_node_careers_pattern', 'careers/[node:title]');
+}
