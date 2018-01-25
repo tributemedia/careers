@@ -9,5 +9,5 @@
  */
 
 function careers_install() {
-  variable_set('pathauto_node_careers_pattern', 'careers/[node:title]');
+  variable_set('pathauto_node_career_pattern', 'careers/[node:title]');
 }
