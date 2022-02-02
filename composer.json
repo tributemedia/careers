@@ -1,7 +1,7 @@
 {
     "name": "tributemedia/careers",
     "description": "Drupal 9 module provides content type and basic configurations for a Careers feature.",
-    "type": "drupal-custom-module",
+    "type": "drupal-module",
     "license": "GPL-3.0-or-later",
     "autoload": {
         "psr-4": {
