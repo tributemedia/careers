@@ -1,0 +1,20 @@
+<?php
+
+use \Drupal\node\Entity\Node;
+
+function careers_install() {
+
+  \Drupal::messenger()->addMessage("Install Careers");
+  
+  // Create Careers Basic Page
+  $node = Node::create([
+    'type' => 'page',
+    'title' => 'Careers',
+    'langcode' => 'en',
+    'uid' => 1,
+  ]);
+  
+  // Save the new page.
+  $node->save();
+
+}

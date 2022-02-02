@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_image_location
+    - node.type.career_posting
+  module:
+    - options
+id: node.career_posting.field_banner_image_location
+field_name: field_banner_image_location
+entity_type: node
+bundle: career_posting
+label: 'Banner Image Location'
+description: 'Where would you like the image to be located from this upload field. The default should match your theme standard.'
+required: true
+translatable: true
+default_value:
+  -
+    value: image-banner-region
+default_value_callback: ''
+settings: {  }
+field_type: list_string

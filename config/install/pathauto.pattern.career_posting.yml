@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: career_posting
+label: 'Career Posting'
+type: 'canonical_entities:node'
+pattern: 'careers/[node:title]'
+selection_criteria:
+  21dc9ad9-8edd-4412-bf07-9b8947886ce2:
+    id: node_type
+    negate: false
+    uuid: 21dc9ad9-8edd-4412-bf07-9b8947886ce2
+    context_mapping:
+      node: node
+    bundles:
+      career_posting: career_posting
+selection_logic: and
+weight: -5
+relationships: {  }

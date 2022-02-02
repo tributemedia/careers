@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_sharing_basic
+    - node.type.career_posting
+    - paragraphs.paragraphs_type.social_sharing
+  module:
+    - entity_reference_revisions
+id: node.career_posting.field_social_sharing_basic
+field_name: field_social_sharing_basic
+entity_type: node
+bundle: career_posting
+label: 'Social Sharing Basic'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      social_sharing: social_sharing
+    target_bundles_drag_drop:
+      card_section:
+        weight: 5
+        enabled: false
+      pillar_navigation_section:
+        weight: 6
+        enabled: false
+      social_links_section:
+        weight: 7
+        enabled: false
+      social_sharing:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

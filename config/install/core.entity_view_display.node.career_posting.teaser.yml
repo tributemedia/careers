@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.career_posting.body
+    - field.field.node.career_posting.field_banner_image_location
+    - field.field.node.career_posting.field_image
+    - field.field.node.career_posting.field_meta_tags
+    - field.field.node.career_posting.field_social_sharing_basic
+    - node.type.career_posting
+  module:
+    - text
+    - user
+id: node.career_posting.teaser
+targetEntityType: node
+bundle: career_posting
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 100
+    region: content
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 101
+    region: content
+hidden:
+  field_banner_image_location: true
+  field_image: true
+  field_meta_tags: true
+  field_social_sharing_basic: true

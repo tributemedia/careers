@@ -1,0 +1,183 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.career_posting.body
+    - field.field.node.career_posting.field_banner_image_location
+    - field.field.node.career_posting.field_image
+    - field.field.node.career_posting.field_meta_tags
+    - field.field.node.career_posting.field_social_sharing_basic
+    - image.style.thumbnail
+    - node.type.career_posting
+  module:
+    - field_group
+    - metatag
+    - paragraphs
+    - path
+    - svg_image
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_content
+        - group_banner_image
+        - group_social_sharing
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+      region: content
+    group_banner_image:
+      children:
+        - field_banner_image_location
+        - field_image
+      parent_name: group_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        label: 'Banner Image'
+        formatter: closed
+        description: '<p class="form-details">This banner image can appear in the banner region or at the top of your content in your page (below your page title). The advantage of using this field is that it will crop and resize the image automatically for presentation on the various mobile and desktop screen sizes.</p>'
+        id: ''
+        classes: ''
+        required_fields: false
+      label: 'Banner Image'
+      region: content
+    group_content:
+      children:
+        - body
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Content
+      region: content
+    group_social_sharing:
+      children:
+        - field_social_sharing_basic
+      parent_name: group_tabs
+      weight: 23
+      format_type: tab
+      format_settings:
+        label: 'Social Sharing'
+        formatter: closed
+        description: '<p class="form-details">If you''d like to have a sharing icon on this page, you can add it here. The alternate URL option is ideal to direct people to a landing page from a thank you page rather than having them share the thank you page.</p>'
+        id: ''
+        classes: ''
+        required_fields: false
+      label: 'Social Sharing'
+      region: content
+id: node.career_posting.default
+targetEntityType: node
+bundle: career_posting
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 10
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_banner_image_location:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_meta_tags:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_social_sharing_basic:
+    type: entity_reference_paragraphs
+    weight: 13
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+  url_redirects:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
