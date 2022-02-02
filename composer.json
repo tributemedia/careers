@@ -1,0 +1,21 @@
+{
+    "name": "tributemedia/careers",
+    "description": "Drupal 9 module provides content type and basic configurations for a Careers feature.",
+    "type": "drupal-custom-module",
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Tributemedia\\Careers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Steve Kenley",
+            "email": "steve.kenley@gmail.com"
+        }
+    ],
+    "require": {
+      "drupal/core": "^8.8.0 || ^9.0",
+      "drupal/eva": "^2.1"
+    }
+}
